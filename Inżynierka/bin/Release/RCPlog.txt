@@ -1,0 +1,11 @@
+[2020-01-26 23:01:05] Błąd bazy przy logowaniu: W bazie nie ma konta o tym adresie. Niepoprawne hasło. 
+[2020-01-26 23:01:13] Błąd bazy przy logowaniu: W bazie nie ma konta o tym adresie. Niepoprawne hasło. 
+[2020-01-26 23:01:40] Błąd bazy przy logowaniu: Niepoprawne hasło. 
+[2020-01-26 23:03:34] Błąd bazy przy logowaniu: W bazie nie ma konta o tym adresie. Niepoprawne hasło. 
+[2020-01-26 23:03:45] Błąd bazy przy logowaniu: Niepoprawne hasło. 
+[2020-01-26 23:03:57] Nieprawidłowe logowanie. Podano błędny email: 
+[2020-01-26 23:04:06] Nieprawidłowe logowanie. Podano błędny email: 
+[2020-01-26 23:06:36] Błąd bazy przy logowaniu: W bazie nie ma konta o tym adresie. Niepoprawne hasło. 
+[27.01.2020 12:30:59] Błąd wpisu dnia wolnego. Wiadomość: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '12.30.00)' at line 1
+[27.01.2020 12:31:14] Błąd wpisu dnia wolnego. Wiadomość: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '12.30.00)' at line 1
+[2020-01-27 20:58:10] Błąd na karcie Odbicia. Wiadomość: Pracownik nie ma przypisanej karty. Nie można zarejestrować odbicia.

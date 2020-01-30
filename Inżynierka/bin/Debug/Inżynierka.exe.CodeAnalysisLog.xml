@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2019\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="16.0">
+ <Targets>
+  <Target Name="C:\Users\Patryk\Dropbox\Inzynierka_master\Inżynierka\Inżynierka\bin\Debug\Inżynierka.exe">
+   <Modules>
+    <Module Name="inżynierka.exe">
+     <Namespaces>
+      <Namespace Name="Inzynierka">
+       <Types>
+        <Type Name="Harmonogram" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2020-01-28 21:12:58Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Zaimplementuj interfejs IDisposable w typie 'Harmonogram', ponieważ tworzy on składowe następujących typów interfejsu IDisposable: 'Uzytkownik', 'DataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IncompleteException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237" Status="Active" Created="2020-01-28 21:12:58Z" FixCategory="NonBreaking">
+           <Issue Certainty="95" Level="Error">Dodaj atrybut [Serializable] do typu 'IncompleteException', ponieważ ten typ implementuje interfejs ISerializable.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="RCPprogram" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2020-01-28 21:12:58Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Zaimplementuj interfejs IDisposable w typie 'RCPprogram', ponieważ tworzy on składowe następujących typów interfejsu IDisposable: 'Form1', 'Form2', 'Wnioski', 'Form3', 'Karty', 'FormUzytkownicy'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#DodajDane(System.String,MySql.Data.MySqlClient.MySqlParameter[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-01-28 21:12:58Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Patryk\Dropbox\Inzynierka_master\Inżynierka\Inżynierka" File="RCPprogram.cs" Line="279">Ciąg zapytania przekazany do elementu 'MySqlCommand.MySqlCommand(string, MySqlConnection)' w 'RCPprogram.DodajDane(string, MySqlParameter[])' może zawierać następujące zmienne: 'komenda'. Jeśli dowolna z tych zmiennych może pochodzić z danych podawanych przez użytkownika, rozważ użycie procedury składowanej lub sparametryzowanego zapytania SQL zamiast tworzenia zapytania przez łączenie ciągów.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PobierzDane(System.String,MySql.Data.MySqlClient.MySqlParameter[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-01-28 21:12:58Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Patryk\Dropbox\Inzynierka_master\Inżynierka\Inżynierka" File="RCPprogram.cs" Line="168">Ciąg zapytania przekazany do elementu 'MySqlCommand.MySqlCommand(string, MySqlConnection)' w 'RCPprogram.PobierzDane(string, MySqlParameter[])' może zawierać następujące zmienne: 'komenda'. Jeśli dowolna z tych zmiennych może pochodzić z danych podawanych przez użytkownika, rozważ użycie procedury składowanej lub sparametryzowanego zapytania SQL zamiast tworzenia zapytania przez łączenie ciągów.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PobierzElement(System.String,MySql.Data.MySqlClient.MySqlParameter[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-01-28 21:12:58Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Patryk\Dropbox\Inzynierka_master\Inżynierka\Inżynierka" File="RCPprogram.cs" Line="210">Ciąg zapytania przekazany do elementu 'MySqlCommand.MySqlCommand(string, MySqlConnection)' w 'RCPprogram.PobierzElement(string, MySqlParameter[])' może zawierać następujące zmienne: 'komenda'. Jeśli dowolna z tych zmiennych może pochodzić z danych podawanych przez użytkownika, rozważ użycie procedury składowanej lub sparametryzowanego zapytania SQL zamiast tworzenia zapytania przez łączenie ciągów.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ZaktualizujDane(System.String,MySql.Data.MySqlClient.MySqlParameter[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-01-28 21:12:58Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Patryk\Dropbox\Inzynierka_master\Inżynierka\Inżynierka" File="RCPprogram.cs" Line="228">Ciąg zapytania przekazany do elementu 'MySqlCommand.MySqlCommand(string, MySqlConnection)' w 'RCPprogram.ZaktualizujDane(string, MySqlParameter[])' może zawierać następujące zmienne: 'komenda'. Jeśli dowolna z tych zmiennych może pochodzić z danych podawanych przez użytkownika, rozważ użycie procedury składowanej lub sparametryzowanego zapytania SQL zamiast tworzenia zapytania przez łączenie ciągów.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Wniosek" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2020-01-28 21:12:58Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Zaimplementuj interfejs IDisposable w typie 'Wniosek', ponieważ tworzy on składowe następujących typów interfejsu IDisposable: 'Uzytkownik'. Jeśli typ 'Wniosek' został wcześniej dostarczony, dodanie do tego typu składowych, które implementują interfejs IDisposable, jest uznawane za istotną zmianę dla istniejących konsumentów.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Inżynierka.Properties">
+       <Types>
+        <Type Name="Resources" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="ExcludedInSource" Created="2020-01-28 21:12:58Z" FixCategory="NonBreaking" LastSeen="0001-01-01 00:00:00Z" />
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Unikaj niewywołanego kodu prywatnego</Name>
+   <Description>Istnieje niewywołany kod, który nie jest widoczny zewnętrznie i nie jest znanym punktem wejścia środowiska uruchomieniowego. Jeśli to naruszenie spowoduje błąd, wyślij raport o problemie do zespołu ds. analizy kodu programu Visual Studio.</Description>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237">
+   <Name>Oznacz typy ISerializable atrybutem SerializableAttribute</Name>
+   <Description>Interfejs System.Runtime.Serialization.ISerializable umożliwia typowi dostosowanie serializacji, natomiast dzięki atrybutowi Serializable środowisko uruchomieniowe rozpoznaje typ jako możliwy do serializacji.</Description>
+   <Resolution Name="Default">Dodaj atrybut [Serializable] do typu {0}, ponieważ ten typ implementuje interfejs ISerializable.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182350.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach</Name>
+   <Description>Ciąg polecenia SQL utworzony na podstawie danych wejściowych użytkownika jest podatny na ataki polegające na wstrzyknięciu kodu SQL. Program Microsoft SQL Server i inne serwery baz danych obsługują procedury składowane i sparametryzowane zapytania SQL, które zmniejszają ryzyko ataków polegających na wstrzyknięciu kodu.</Description>
+   <Resolution Name="WithNonLiterals">Ciąg zapytania przekazany do elementu {0} w {1} może zawierać następujące zmienne: {2}. Jeśli dowolna z tych zmiennych może pochodzić z danych podawanych przez użytkownika, rozważ użycie procedury składowanej lub sparametryzowanego zapytania SQL zamiast tworzenia zapytania przez łączenie ciągów.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>Typy, do których należą pola możliwe do rozporządzania, powinny być możliwe do rozporządzania</Name>
+   <Description>Typy deklarujące możliwe do rozporządzania składowe powinny również implementować interfejs IDisposable. Jeśli typ nie ma żadnych niezarządzanych zasobów, nie należy implementować w nim finalizatora.</Description>
+   <Resolution Name="DependsOnFix">Zaimplementuj interfejs IDisposable w typie {0}, ponieważ tworzy on składowe następujących typów interfejsu IDisposable: {1}. Jeśli typ {0} został wcześniej dostarczony, dodanie do tego typu składowych, które implementują interfejs IDisposable, jest uznawane za istotną zmianę dla istniejących konsumentów.</Resolution>
+   <Resolution Name="NonBreaking">Zaimplementuj interfejs IDisposable w typie {0}, ponieważ tworzy on składowe następujących typów interfejsu IDisposable: {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Kategoria</String>
+  <String Key="Certainty">Pewność</String>
+  <String Key="CollapseAll">Zwiń wszystko</String>
+  <String Key="CheckId">Identyfikator testu</String>
+  <String Key="Error">Błąd</String>
+  <String Key="Errors">błędy</String>
+  <String Key="ExpandAll">Rozwiń wszystko</String>
+  <String Key="Help">Pomoc</String>
+  <String Key="Line">Wiersz</String>
+  <String Key="Messages">komunikaty</String>
+  <String Key="LocationNotStoredInPdb">[Lokalizacja nie jest przechowywana w pliku PDB]</String>
+  <String Key="Project">Projekt</String>
+  <String Key="Resolution">Rozwiązanie</String>
+  <String Key="Rule">Reguła</String>
+  <String Key="RuleFile">Plik reguł</String>
+  <String Key="RuleDescription">Opis reguły</String>
+  <String Key="Source">Źródło</String>
+  <String Key="Status">Stan</String>
+  <String Key="Target">Element docelowy</String>
+  <String Key="Warning">Ostrzeżenie</String>
+  <String Key="Warnings">ostrzeżenia</String>
+  <String Key="ReportTitle">Raport z analizy kodu</String>
+ </Localized>
+</FxCopReport>

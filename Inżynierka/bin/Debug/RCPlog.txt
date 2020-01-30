@@ -1,0 +1,20 @@
+[2020-01-21 09:14:57] Inny błąd przy próbie zmiany wniosku 6. Wiadomość: Tekst zawiera niedozwolony znak.
+[2020-01-28 18:36:08] Inny błąd przy próbie wysłania wniosku 0. Wiadomość: Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+[2020-01-28 18:36:54] Inny błąd przy próbie wysłania wniosku 0. Wiadomość: Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+[2020-01-28 18:49:33] Inny błąd przy próbie wysłania wniosku 11. Wiadomość: Indeks był spoza zakresu. Musi mieć wartość nieujemną i mniejszą niż rozmiar kolekcji.
+Nazwa parametru: index
+[2020-01-28 18:55:28] Inny błąd. Ładowanie grid się nie powiodło. Wiadomość: Table 'p549160_inzynierka.wnioski' doesn't exist
+[2020-01-28 18:55:28] Inny błąd przy próbie wysłania wniosku 0. Wiadomość: Indeks był spoza zakresu. Musi mieć wartość nieujemną i mniejszą niż rozmiar kolekcji.
+Nazwa parametru: index
+[2020-01-28 19:50:43] Nieprawidłowy format danych przy próbie wysłania wniosku 0. Wiadomość: Tekst zawiera niedozwolony znak.
+[2020-01-28 19:51:36] Błąd wpisu dnia wolnego. Wiadomość: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''niedozwolony znak '', `odpowiedz`='', `imie`='', `nazwisko`= '' WHERE Id=16' at line 1
+[2020-01-28 19:52:34] Nieprawidłowy format danych przy próbie wysłania wniosku 0. Wiadomość: Tekst zawiera niedozwolony znak.
+[2020-01-28 20:00:22] Inny błąd przy próbie zmiany wniosku 19. Wiadomość: Tekst zawiera niedozwolony ciąg.
+[2020-01-28 20:00:39] Inny błąd przy próbie zmiany wniosku 19. Wiadomość: Tekst zawiera niedozwolony ciąg.
+[2020-01-28 20:01:02] Nieprawidłowy format danych przy próbie wysłania wniosku 0. Wiadomość: Tekst zawiera niedozwolony ciąg.
+[2020-01-28 20:03:55] Nieprawidłowy format danych przy próbie wysłania wniosku 0. Wiadomość: Wpisany tekst jest za długi.
+[2020-01-28 20:17:37] Inny błąd przy próbie odrzucenia wniosku 3. Wiadomość: Zgłoszono wyjątek typu 'Inzynierka.IncompleteException'.
+[2020-01-28 21:00:38] Błąd bazy przy logowaniu: W bazie nie ma konta o tym adresie. Niepoprawne hasło. 
+[28.01.2020 21:20:46] Błąd na karcie Raporty. Błędna ścieżka. Wiadomość: Odmowa dostępu do ścieżki „C:\RCPrap_Zacholski4_P_sty20.pdf”.
+[28.01.2020 21:21:11] Błąd na karcie Raporty. Błędna ścieżka. Wiadomość: Odmowa dostępu do ścieżki „C:\RCPrap_admin2_a_gru19.pdf”.
+[2020-01-28 21:23:01] Błąd na karcie Raporty. Błędna ścieżka. Wiadomość: Odmowa dostępu do ścieżki „C:\RCPrap_Zacholski4_P_gru19.pdf”.
